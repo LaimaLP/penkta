@@ -1,7 +1,8 @@
 export default function Book({book}) {
- 
-    const { id, title, author, type, price, img } = book;
- 
+ //kiekviena knyga perduodam per propsa ^book yra objektas, ji dekonstruktinam i atskiras dalis
+ //ir viska atspausdina. Taip atrodo vienos knygos atvaizdavimas. Visoms reikia Books komponente susimapinti 
+    const { id, title, author, type, price, img } = book; 
+ //
     return (
         <div className="book">
             <div className="book__image">

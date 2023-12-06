@@ -13,3 +13,5 @@ export default function Books() {
 
   </div>;
 }
+//kai knygas gaunam, atsidaro Book komponentas --> .(kitas failas).. kiekviena knyga kad gautume turim susimapinti Book komponenta. Uzdedam key
+// ir perduodam book'sa zemyn
