@@ -17,7 +17,37 @@ color:white;
   background-color: #282c34;
 
   }
-  .books{
-    
+
+  .books {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .book {
+      width: 200px;
+      height: 300px;
+      margin: 10px;
+      background-color: #858d8f;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &__title {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      &__author {
+        font-size: 16px;
+      }
+      &__image {
+        width: 120px;
+        height: 150px;
+        margin: 10px;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
   }
 }
