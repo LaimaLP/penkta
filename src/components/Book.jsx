@@ -14,8 +14,9 @@ export default function Book({book}) {
             </div>
             <div className="book__title">{title}</div>
             <div className="book__author">{author}</div>
-            <div className="book__type">{types !== null ? types.find(t=> t.id === book.type).title : ""}</div> //jeigu tipai nera nullas, jie jau gauti, tuomet paisome. Tipuose faindinam, jeigu id lygud tipui, tuomet imam titla, jei ne, nieko nerodom
+            <div className="book__type">{types !== null ? types.find(t=> t.id === book.type).title : ""}</div> 
             <div className="book__price">{price} EUR</div>
         </div>
     );
 }
+//<!-- jeigu tipai nera nullas, jie jau gauti, tuomet paisome. Tipuose faindinam, jeigu id lygud tipui, tuomet imam titla, jei ne, nieko nerodom
