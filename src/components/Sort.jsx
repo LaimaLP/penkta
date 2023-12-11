@@ -22,6 +22,9 @@ export default function Sort() {
         };
 
         switch (sort) { //kai sortinam, butina tai daryti ant kopijos, nes sortas nedaro kopijas ir jei daraysim ant orginalo, niekas nesikeis
+            case 0:
+                setBooks(prev => [...prev].sort((a, b) => a.row - b.row));
+                break;
             case 1:
                 setBooks(prev => [...prev].sort((a, b) => a.title.localeCompare(b.title)));
                 break;

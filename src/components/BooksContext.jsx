@@ -14,11 +14,12 @@ export const BooksProvider = ({ children }) => {
     axios
       .get(booksUrl) //kreipimasis i uzduota url
       .then((res) => {
-        setBooks(res.data.map(b=>({...b, show:true}))); //gaunam rezultata ir ta rezultata pasetinam i useState=> [books, setBooks]
+        setBooks(res.data.map((b, i)=>({...b, show:true, row:i}))); //gaunam rezultata ir ta rezultata pasetinam i useState=> [books, setBooks]
         console.log(res.data); // res.data yra visi booksai, ateinantys is serverio, masyavas su knygom
       });
   }, []);
 
+  
   console.log("booksProvider Children:", children);
 
   useEffect((_) => { // sortui padaryti
