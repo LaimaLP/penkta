@@ -19,9 +19,9 @@ export const BooksProvider = ({ children }) => {
       });
   }, []);
 
-  console.log(children);
+  console.log("booksProvider Children:", children);
 
-  useEffect((_) => {
+  useEffect((_) => { // sortui padaryti
     axios
       .get(typesUrl) //kreipimasis i uzduota url
       .then(res => {

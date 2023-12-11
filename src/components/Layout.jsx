@@ -9,14 +9,12 @@ export default function Layout() {
 
     return (
         <div className="layout">
-            <Top/>
-            {
+            <Top/>{
             books === null 
             ? 
             <div className="loading">Kraunasi knygos...</div>
             :
             <Books/>
-
         }
             
         </div>
